@@ -1,0 +1,141 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Asset\CSS\style.css"> 
+
+<title>MULTIMEDIA</title>
+</head>
+<body>
+<br> <br>
+
+<!---INSERTING VIDEO--->
+
+<!---Simonsays--->
+
+<center>
+<video controls width="720px" height= "70%" muted>
+<source src="asset/video/simonsays.mp4" type="video/mp4"
+> </video>
+
+<br><br><br>
+
+<!---Seventeen--->
+<video controls width="720px" height="70%" autoplay muted>
+<source src="asset/video/seventeen.mp4" type="video/mp4"> </video>
+
+<br><br><br>
+
+<!---EMBEDDING YOUTUBE VIDEO--->
+<hr>
+<center> <b> YOUTUBE VIDEO <b> </center>
+<hr>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/USyL4tNFNhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br><br><br>
+
+ <marquee> <h1> NCT 127 FAVORITE(VAMPIRE)</h1> </marquee>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CgWBBFVvVio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+ <marquee> <h1>BLACKPINK ROSE HARD TO LOVE</h1></marquee>
+
+<br><br><br><br>
+
+<!---INSERTING AUDIO--->
+
+<hr>
+<centert> MUSIC <b> </center>
+
+<hr>
+<br>
+<center> <audio controls loop> 
+<source src="asset/audio/cherry_bomb.mp3" type="audio/mp3"> </audio> </center>
+<br><br><br>
+
+<center> <audio controls loop>
+<source src="asset/audio/candy.mp3" type="audio/mp3"> </audio> </center>
+<br><br><br>
+
+<center> <audio controls loop>
+<source src="asset/audio/do it like this.mp3" type="audio/mp3"> </audio> </center>
+<br><br><br>
+
+<center> <audio controls loop>
+<source src="asset/audio/now i know.mp3" type="audio/mp3"> </audio> </center>
+<br><br><br>
+
+<center> <audio controls loop>
+<source src="asset/audio/spring is gone by chance.mp3" type="audio/mp3"> </audio> </center>
+
+<br><br><br>
+
+<center>
+<iframe src="asset/pdf/rubric.pdf" width="200%" height="800px">
+</iframe>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<center> <b> JAVA APPLET <b> </center> 
+<hr>
+
+<!---JAVA APPLET---> 
+
+<!---to call the css---> 
+
+   <center> <div id="clock"> 8:10:45 </div> </center>
+
+<!---to link to the current time---> 
+ 
+   <script src="clock2.js"></script>
+
+<br><br><br><br>
+
+
+
+
+<script> 
+ setInterval(showTime, 1000);
+function showTime() {
+  let time = new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
+  am_pm = "AM";
+
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+  }
+  if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+  }
+
+  hour = hour < 10 ? "0" + hour : hour;
+  min = min < 10 ? "0" + min : min;
+  sec = sec < 10 ? "0" + sec : sec;
+
+  let currentTime = hour + ":"
+      + min + ":" + sec + am_pm;
+
+  document.getElementById("clock")
+      .innerHTML = currentTime;
+}
+showTime();
+
+</script>
+
+
+</body>
+</html>
